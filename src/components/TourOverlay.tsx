@@ -38,6 +38,16 @@ export function TourOverlay({
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [status, nextStep, prevStep, skipTour]);
 
+  // Scroll lock
+  useEffect(() => {
+    if (status !== "running") return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = prev;
+    };
+  }, [status]);
+
   if (status !== "running" || !currentStep) return null;
 
   const isFirst = currentStepIndex === 0;

@@ -3,5 +3,5 @@ export function resolveTarget(targetId: string): Element | null {
 }
 
 export function scrollTargetIntoView(el: Element): void {
-  el.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
+  el.scrollIntoView({ behavior: "instant", block: "center", inline: "center" });
 }

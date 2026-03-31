@@ -53,12 +53,14 @@ export function useSpotlightRect(targetId: string): TargetRect | null {
       resizeTimer = setTimeout(measure, 100);
     };
     window.addEventListener("resize", onResize);
+    window.addEventListener("scroll", measure, { passive: true });
 
     return () => {
       cancelAnimationFrame(rafId);
       clearTimeout(resizeTimer);
       ro.disconnect();
       window.removeEventListener("resize", onResize);
+      window.removeEventListener("scroll", measure);
     };
   }, [targetId]);
 
