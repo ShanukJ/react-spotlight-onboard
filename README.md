@@ -2,6 +2,8 @@
 
 Zero-dependency React onboarding tour with SVG spotlight, smart tooltip placement, and keyboard navigation.
 
+**[Live Demo](https://spotlight.shanukj.me)**
+
 - **No external dependencies** — built entirely with React + TypeScript
 - **SVG spotlight** — smooth cutout effect that works with any layout (no z-index hacks)
 - **Smart placement** — tooltip auto-positions to avoid viewport edges
