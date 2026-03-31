@@ -1,4 +1,4 @@
-# react-spotlight-tour
+# react-spotlight-onboard
 
 Zero-dependency React onboarding tour with SVG spotlight, smart tooltip placement, and keyboard navigation.
 
@@ -14,11 +14,11 @@ Zero-dependency React onboarding tour with SVG spotlight, smart tooltip placemen
 ## Installation
 
 ```bash
-npm install react-spotlight-tour
+npm install react-spotlight-onboard
 # or
-pnpm add react-spotlight-tour
+pnpm add react-spotlight-onboard
 # or
-yarn add react-spotlight-tour
+yarn add react-spotlight-onboard
 ```
 
 ## Quick Start
@@ -27,7 +27,7 @@ yarn add react-spotlight-tour
 
 ```tsx
 // app/layout.tsx or a providers file ("use client" required)
-import { TourProvider } from "react-spotlight-tour";
+import { TourProvider } from "react-spotlight-onboard";
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
@@ -50,7 +50,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
 
 ```tsx
 "use client";
-import { useOnboardingTour } from "react-spotlight-tour";
+import { useOnboardingTour } from "react-spotlight-onboard";
 import { useEffect } from "react";
 
 export function DashboardPage() {
@@ -169,7 +169,7 @@ All interactive components include the `"use client"` directive. Place `TourProv
 ```tsx
 // providers.tsx
 "use client";
-import { TourProvider } from "react-spotlight-tour";
+import { TourProvider } from "react-spotlight-onboard";
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return <TourProvider>{children}</TourProvider>;

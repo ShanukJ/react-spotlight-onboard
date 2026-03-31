@@ -1,5 +1,5 @@
 {
-  "name": "react-spotlight-tour",
+  "name": "react-spotlight-onboard",
   "version": "1.0.0",
   "description": "Zero-dependency React onboarding tour with SVG spotlight, smart tooltip placement, and keyboard navigation.",
   "keywords": [
@@ -18,10 +18,10 @@
   "author": "ShanukJ",
   "repository": {
     "type": "git",
-    "url": "https://github.com/shanukj/react-spotlight-tour.git"
+    "url": "https://github.com/shanukj/react-spotlight-onboard.git"
   },
   "bugs": {
-    "url": "https://github.com/shanukj/react-spotlight-tour/issues"
+    "url": "https://github.com/shanukj/react-spotlight-onboard/issues"
   },
   "homepage": "https://spotlight.shanukj.me",
   "type": "module",
